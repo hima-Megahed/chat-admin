@@ -7,47 +7,10 @@
 -->
 <html lang="en">
   <head>
-    <base href="./../">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
-    <meta name="author" content="Łukasz Holeczek">
-    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>CoreUI Free Bootstrap Admin Template</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/dist/assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/dist/assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/dist/assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/dist/assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/dist/assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/dist/assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/dist/assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/dist/assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/dist/assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/dist/assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/dist/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/dist/assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/dist/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/dist/assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <!-- Main styles for this application-->
     <link href="/chat-admin/css/style.css" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      // Shared ID
-      gtag('config', 'UA-118965717-3');
-      // Bootstrap ID
-      gtag('config', 'UA-118965717-5');
-    </script>
   </head>
   <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
@@ -171,44 +134,26 @@
                 <!-- /.col-->
                 <div class="col-lg-12">
                   <div class="card">
-                    <div class="card-header"><i class="fa fa-align-justify"></i> Public Channels</div>
+                    <div class="card-header"><i class="fa fa-align-justify"></i> Tenants</div>
                     <div class="card-body">
                       <table class="table table-responsive-sm table-striped">
                         <thead>
                           <tr>
-                            <th>Channel Name</th>
+                            <th>Tenant Name</th>
                             <th>Actions</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>General</td>
+                            <td>napa-awards.secure-platform.com</td>
                             <td>
-                              <div class="btn-group">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
-                                <div class="dropdown-menu"><a class="dropdown-item" data-toggle="modal" data-target="#largeModal" href="#">Edit</a> <a class="dropdown-item" data-toggle="modal" data-target="#largeModalDelete" href="#">Delete</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="groupChannels/users/users-list.html">Users</a>
-                                  <a class="dropdown-item" href="groupChannels/moderators/moderators-list.html">Moderators</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Download Chat Logs</a>
-                                </div>
-                              </div>
+                                <button class="btn btn-secondary btn-sm" type="button" data-toggle="modal" data-target="#largeModal">Add Moderator</button>
                             </td>
                           </tr>
                           <tr>
-                            <td>ISCA Webinar</td>
+                            <td>training-hussein.secure-platform.com</td>
                             <td>
-                              <div class="btn-group">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
-                                <div class="dropdown-menu"><a class="dropdown-item" data-toggle="modal" data-target="#largeModal" href="#">Edit</a> <a class="dropdown-item" data-toggle="modal" data-target="#largeModalDelete" href="#">Delete</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="groupChannels/users/users-list.html">Users</a>
-                                  <a class="dropdown-item" href="groupChannels/moderators/moderators-list.html">Moderators</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Download Chat Logs</a>
-                                </div>
-                              </div>
+                                <button class="btn btn-secondary btn-sm" type="button" data-toggle="modal" data-target="#largeModal">Add Moderator</button>
                             </td>
                           </tr>
                         </tbody>
@@ -228,63 +173,36 @@
             </div>
           </div>
 
-
           <!-- /.modal-->
-          <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+          <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Please select date range</h4>
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                </div>
-                <div class="modal-body">
-                  <div class="form-group row">
-                    <label class="col-md-3 col-form-label" for="date-input">Channel Name</label>
-                    <div class="col-md-9">
-                      <input class="form-control" id="date-input" type="text" name="date-input"><span class="help-block">Please enter a valid date</span>
-                    </div>
+                  <div class="modal-header">
+                      <h4 class="modal-title">Please enter moderator email</h4>
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                              aria-hidden="true">×</span></button>
                   </div>
-                  <div class="form-group row">
-                    <label class="col-md-3 col-form-label" for="date-input">Channel Description</label>
-                    <div class="col-md-9">
-                      <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9"></textarea>
-                    </div>
+                  <div class="modal-body">
+                      <div class="form-group row">
+                          <label class="col-md-3 col-form-label" for="date-input">Moderator Email:</label>
+                          <div class="col-md-9">
+                              <input class="form-control" id="date-input" type="email" name="date-input"
+                                  placeholder="date"><span class="help-block">Please enter a valid email</span>
+                          </div>
+                      </div>
                   </div>
-                  
-                </div>
-                <div class="modal-footer">
-                  <button class="btn btn-sm btn-primary" type="submit"> Update</button>
-                  <button class="btn btn-sm btn-danger" type="reset"> Cancel</button>
-                </div>
+                  <div class="modal-footer">
+                      <button class="btn btn-sm btn-primary" type="submit"> Assign </button>
+                      <button class="btn btn-sm btn-danger" type="reset"> Cancel </button>
+                  </div>
               </div>
               <!-- /.modal-content-->
-            </div>
-            <!-- /.modal-dialog-->
           </div>
-          
-
-          <!-- /.modal-->
-          <div class="modal fade" id="largeModalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Please select date range</h4>
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                </div>
-                <div class="modal-body">
-                  <h4>Are you sure you want to delete channel?</h4>
-                  
-                </div>
-                <div class="modal-footer">
-                  <button class="btn btn-sm btn-danger" type="submit"> Delete</button>
-                  <button class="btn btn-sm btn-secondary" type="reset"> Cancel</button>
-                </div>
-              </div>
-              <!-- /.modal-content-->
-            </div>
-            <!-- /.modal-dialog-->
-          </div>
+          <!-- /.modal-dialog-->
+      </div>
         </main>
+        
         <footer class="c-footer">
           <div><a href="https://coreui.io">CoreUI</a> © 2020 creativeLabs.</div>
           <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
