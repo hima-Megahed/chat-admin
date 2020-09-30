@@ -122,30 +122,37 @@
                 <!-- /.col-->
                 <div class="col-lg-12">
                   <div class="card">
-                    <div class="card-header"><i class="fa fa-align-justify"></i> Tenants</div>
+                    <div class="card-header">
+                        <i class="fa fa-align-justify"></i> Tenants
+                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#largeModal">Add Moderator</button>
+                    </div>
                     <div class="card-body">
                       <table class="table table-responsive-sm table-striped">
                         <thead>
                           <tr>
-                            <th>Tenant Name</th>
+                            <th>Moderator Email</th>
                             <th>Actions</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>napa-awards.secure-platform.com</td>
+                            <td>m.gohary28@gmail.com</td>
                             <td>
                               <div class="btn-group">
                                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
-                                  <a class="dropdown-item" href="/admin-moderation/superAdmin/tenant-moderators.html">Moderators</a>
+                                  <a class="dropdown-item" data-toggle="modal" data-target="#largeModalDelete" href=":javascript;">Remove Moderator</a>
                                 </div>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>training-hussein.secure-platform.com</td>
+                            <td>ahmed@openwater.com</td>
                             <td>
-                                <button class="btn btn-secondary btn-sm" type="button" data-toggle="modal" data-target="#largeModal">Add Moderator</button>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
+                                      <a class="dropdown-item" data-toggle="modal" data-target="#largeModalDelete" href=":javascript;">Remove Moderator</a>
+                                    </div>
+                                  </div>
                             </td>
                           </tr>
                         </tbody>
@@ -194,7 +201,25 @@
       </div>
 
 
-       
+      <!-- /.modal-->
+      <div class="modal fade" id="largeModalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Are you sure you want to delete channel?</h4>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-sm btn-danger" type="submit"> Delete</button>
+              <button class="btn btn-sm btn-secondary" data-dismiss="modal" type="button"> Cancel</button>
+            </div>
+          </div>
+          <!-- /.modal-content-->
+        </div>
+        <!-- /.modal-dialog-->
+      </div>
         </main>
         
         <footer class="c-footer">
